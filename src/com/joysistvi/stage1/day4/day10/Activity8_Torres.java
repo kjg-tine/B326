@@ -7,12 +7,10 @@ public class Activity8_Torres {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Declare an array of 5 integers
         int[] numbers = new int[5];
 
         int sum = 0;
 
-        // Ask the user to enter 5 numbers
         System.out.println("Enter 5 numbers:");
 
         for (int i = 0; i < numbers.length; i++) {
@@ -20,7 +18,6 @@ public class Activity8_Torres {
             numbers[i] = scanner.nextInt();
         }
 
-        // Display all numbers entered
         System.out.println("\nYou entered:");
 
         for (int i = 0; i < numbers.length; i++) {
@@ -28,10 +25,8 @@ public class Activity8_Torres {
             sum += numbers[i];
         }
 
-        // Compute average
         double average = (double) sum / numbers.length;
 
-        // Find highest and lowest
         int highest = numbers[0];
         int lowest = numbers[0];
 
@@ -45,7 +40,6 @@ public class Activity8_Torres {
             }
         }
 
-        // Display results
         System.out.println("\nSum = " + sum);
         System.out.println("Average = " + average);
         System.out.println("Highest = " + highest);
